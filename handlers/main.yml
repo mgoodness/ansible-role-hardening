@@ -4,6 +4,8 @@
   become: 'yes'
   become_method: sudo
   command: service auditd restart
+  args:
+    warn: 'no'
 
 - name: generate auditd
   become: 'yes'
